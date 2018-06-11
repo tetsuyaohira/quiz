@@ -5,6 +5,8 @@
     var btn = document.getElementById('btn');
     var answers = document.querySelectorAll('#answers > li');
     var shuffledAnswers;
+    var result = document.getElementById('result');
+    var scoreLabel = document.querySelector('#result > p');
 
     var quizSet = [
         {q: 'What is A?', a: ['A0', 'A1', 'A2']},
@@ -59,7 +61,9 @@
             // setQuiz();
             if (currentNum === quizSet.length) {
                 // show score
-                console.log('Score: ' + score + ' / ' + quizSet.length);
+                // console.log('Score: ' + score + ' / ' + quizSet.length);
+                scoreLabel.textContent = 'Score: ' + score + ' / ' + quizSet.length;
+                result.classList.add('show');
             } else {
                 setQuiz();
             }
