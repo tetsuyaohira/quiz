@@ -9,9 +9,9 @@
     var scoreLabel = document.querySelector('#result > p');
 
     var quizSet = [
-        {q: 'What is A?', a: ['A0', 'A1', 'A2']},
-        {q: 'What is B?', a: ['B0', 'B1', 'B2']},
-        {q: 'What is C?', a: ['C0', 'C1', 'C2']}
+        {q: '1 + 1 = ?', a: ['2', '0', '11']},
+        {q: '4 - 1 = ?', a: ['3', '5', '1']},
+        {q: '5 * 2 =?', a: ['10', '4', '7']}
     ];
 
     var currentNum = 0;
